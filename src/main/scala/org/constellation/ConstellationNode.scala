@@ -85,7 +85,7 @@ import scala.concurrent.ExecutionContext
 
       localKeyPair match {
         case Failure(e) =>
-          e.printStackTrace()
+          logger.error("localKeyPair error", e)
         case _ =>
       }
 
